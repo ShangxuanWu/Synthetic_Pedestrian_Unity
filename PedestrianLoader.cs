@@ -253,7 +253,7 @@ public class PedestrianLoader : MonoBehaviour
         // 12. Left wrist
         // 13. Neck
         // 14. Head top
-        int nJoint = 14;
+        /*int nJoint = 14;
         string[] jointName = new string[nJoint];
         jointName[0] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot";
         jointName[1] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg";
@@ -268,7 +268,87 @@ public class PedestrianLoader : MonoBehaviour
         jointName[10] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm";
         jointName[11] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand";
         jointName[12] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck";      // lower neck
-        jointName[13] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End"; // top of head
+        jointName[13] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End"; // top of head*/
+
+		// joint set #3 MPII setting
+		// keyword of model from Mixamo
+		/*{0,  "Head"},
+		{1,  "Neck"},
+		{2,  "RShoulder"},
+		{3,  "RElbow"},
+		{4,  "RWrist"},
+		{5,  "LShoulder"},
+		{6,  "LElbow"},
+		{7,  "LWrist"},
+		{8,  "RHip"},
+		{9,  "RKnee"},
+		{10, "RAnkle"},
+		{11, "LHip"},
+		{12, "LKnee"},
+		{13, "LAnkle"},
+		{14, "Chest"},
+		{15, "Bkg"}*/
+
+		int nJoint = 15;
+        string[] jointName = new string[nJoint];
+		jointName[0] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End"; // Head
+		jointName[1] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck"; // Neck
+		jointName[2] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm"; // Right Shoulder
+		jointName[3] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm";  // Right Elbow
+		jointName[4] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand"; // Right Wrist
+		jointName[5] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm"; // Left Shoulder
+		jointName[6] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm"; // Left Elbow
+		jointName[7] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand"; // Left Wrist
+		jointName[8] = "mixamorig:Hips/mixamorig:RightUpLeg"; // Right Hip
+		jointName[9] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg"; // Right Knee
+		jointName[10] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot"; // Right ankle
+		jointName[11] = "mixamorig:Hips/mixamorig:LeftUpLeg"; // Left Hip
+		jointName[12] = "mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg";      // Left Knee
+		jointName[13] = "mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot"; // Left Ankle
+		jointName[14] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2"; // Chest
+
+		// joint set #4 MSCOCO dataset
+		/* {0,  "Nose"},
+		{1,  "Neck"},
+		{2,  "RShoulder"},
+		{3,  "RElbow"},
+		{4,  "RWrist"},
+		{5,  "LShoulder"},
+		{6,  "LElbow"},
+		{7,  "LWrist"},
+		{8,  "RHip"},
+		{9,  "RKnee"},
+		{10, "RAnkle"},
+		{11, "LHip"},
+		{12, "LKnee"},
+		{13, "LAnkle"},
+		{14, "REye"},
+		{15, "LEye"},
+		{16, "REar"},
+		{17, "LEar"},
+		{18, "Bkg"},
+
+
+		int nJoint = 18;
+		string[] jointName = new string[nJoint];
+		jointName[0] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot";
+		jointName[1] = "mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg";
+		jointName[2] = "mixamorig:Hips/mixamorig:RightUpLeg";
+		jointName[3] = "mixamorig:Hips/mixamorig:LeftUpLeg";
+		jointName[4] = "mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg";
+		jointName[5] = "mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot";
+		jointName[6] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand";
+		jointName[7] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm";
+		jointName[8] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm";
+		jointName[9] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm";
+		jointName[10] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm";
+		jointName[11] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand";
+		jointName[12] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck";      // lower neck
+		jointName[13] = "mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End"; // top of head
+		jointName[14] = ; // right eye
+		jointName[15] = ; // left eye
+		jointName[16] = ; // right ear
+		jointName[17] = ; // left ear*/
 
 
         Vector3[] jointPosition = new Vector3[nJoint];

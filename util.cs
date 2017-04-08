@@ -8,7 +8,7 @@ public static class Utils
     public enum distance { NEAR, MIDDLE, FAR};
 
     // ********************************************* please just change this **********
-    public static distance render_distance = distance.FAR; // NEAR, MIDDLE, FAR
+    public static distance render_distance = distance.NEAR; // NEAR, MIDDLE, FAR
     // ********************************************************************************
     public static int w = 736;
     public static int h = 368;
